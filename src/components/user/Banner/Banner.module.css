@@ -1,0 +1,15 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 306px;
+  padding: 217px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  overflow: hidden;
+}

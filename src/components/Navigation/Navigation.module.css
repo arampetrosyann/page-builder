@@ -1,0 +1,23 @@
+.navList {
+  display: flex;
+  list-style: none;
+  height: inherit;
+}
+
+.navLink {
+  display: flex;
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navLink > a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
