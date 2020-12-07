@@ -54,7 +54,6 @@ function BannerSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
           value={height}
           label="height"
           onChange={(e) => {
@@ -69,7 +68,7 @@ function BannerSettings() {
 Banner.craft = {
   props: {
     src: "/",
-    height: 306,
+    height: "306px",
   },
   related: {
     settings: BannerSettings,

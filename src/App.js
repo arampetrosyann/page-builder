@@ -176,7 +176,7 @@ function App() {
                 justifyContent="center"
                 canvas
               >
-                <Slideshow images={slideshow} width={600} height={400} />
+                <Slideshow images={slideshow} width="600px" height="400px" />
               </Element>
 
               <Element

@@ -120,6 +120,7 @@ Image.craft = {
     src: "/",
     title: "",
     alt: "image",
+    href: "",
   },
   related: {
     settings: ImageSettings,

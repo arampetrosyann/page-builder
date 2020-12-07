@@ -83,7 +83,7 @@ function FlexboxSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          value={flex}
+          value={flex || ""}
           label="flex"
           onChange={(e) => {
             setProp((props) => (props.flex = e.target.value));
@@ -138,8 +138,7 @@ function FlexboxSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
-          value={height}
+          value={height || ""}
           label="height"
           onChange={(e) => {
             setProp((props) => (props.height = e.target.value));
@@ -150,8 +149,7 @@ function FlexboxSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
-          value={margin}
+          value={margin || ""}
           label="margin"
           onChange={(e) => {
             setProp((props) => (props.margin = e.target.value));
@@ -162,8 +160,7 @@ function FlexboxSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
-          value={padding}
+          value={padding || ""}
           label="padding"
           onChange={(e) => {
             setProp((props) => (props.padding = e.target.value));
@@ -174,7 +171,7 @@ function FlexboxSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <FormLabel component="legend">Color</FormLabel>
         <ColorPicker
-          defaultValue={bgcolor}
+          defaultValue={bgcolor || ""}
           onChange={(color) => {
             setProp((props) => (props.bgcolor = color));
           }}
@@ -185,6 +182,12 @@ function FlexboxSettings() {
 }
 
 Flexbox.craft = {
+  props: {
+    component: "div",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    flexWrap: "nowrap",
+  },
   related: {
     settings: FlexboxSettings,
   },

@@ -110,7 +110,6 @@ function CardSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
           value={height}
           label="height"
           onChange={(e) => {
@@ -126,8 +125,8 @@ Card.craft = {
   props: {
     imageSrc: "/",
     alt: "img",
-    title: "",
-    bgColor: "#ff7e02",
+    title: "Card",
+    height: "380px",
   },
   related: {
     settings: CardSettings,

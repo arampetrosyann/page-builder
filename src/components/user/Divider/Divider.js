@@ -34,7 +34,7 @@ function DividerSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <FormLabel component="legend">Margin</FormLabel>
         <Slider
-          value={margin || 8}
+          value={margin}
           step={1}
           min={1}
           max={100}

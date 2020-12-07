@@ -49,6 +49,7 @@ function SlideshowSettings() {
     height,
   } = useNode((node) => ({
     src: node.data.props.src,
+    width: node.data.props.width,
     height: node.data.props.height,
   }));
 
@@ -80,8 +81,7 @@ function SlideshowSettings() {
       <FormControl fullWidth={true} margin="normal" component="fieldset">
         <TextField
           fullWidth={true}
-          type="number"
-          value={height || 306}
+          value={height}
           label="height"
           onChange={(e) => {
             setProp((props) => (props.height = e.target.value));
@@ -93,6 +93,11 @@ function SlideshowSettings() {
 }
 
 Slideshow.craft = {
+  props: {
+    images: ["/src"],
+    width: "100%",
+    height: "400px",
+  },
   related: {
     settings: SlideshowSettings,
   },

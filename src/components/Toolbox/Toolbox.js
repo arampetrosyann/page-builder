@@ -93,7 +93,13 @@ export default function Toolbox() {
           ref={(ref) =>
             connectors.create(
               ref,
-              <Element is={Flexbox} flexDirection="column" padding={5} canvas />
+              <Element
+                is={Flexbox}
+                flexDirection="column"
+                padding="5px"
+                height="50px"
+                canvas
+              />
             )
           }
           className={classes.button}
@@ -102,7 +108,7 @@ export default function Toolbox() {
           Container
         </MuButton>
         <MuButton
-          ref={(ref) => connectors.create(ref, <Button value="Text" />)}
+          ref={(ref) => connectors.create(ref, <Button value="Button" />)}
           className={classes.button}
           variant="contained"
         >
@@ -137,7 +143,9 @@ export default function Toolbox() {
           Image
         </MuButton>
         <MuButton
-          ref={(ref) => connectors.create(ref, <Slideshow images={["/src"]} />)}
+          ref={(ref) =>
+            connectors.create(ref, <Slideshow width="100%" images={["/src"]} />)
+          }
           className={classes.button}
           variant="contained"
         >

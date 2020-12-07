@@ -70,7 +70,7 @@ function ButtonSettings() {
 
 Button.craft = {
   props: {
-    value: "button",
+    value: "Button",
     bgColor: "#ff7e02",
   },
   related: {
