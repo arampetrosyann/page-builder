@@ -71,6 +71,7 @@ function App() {
                   margin="auto 0"
                   alignItems="center"
                   textAlign="center"
+                  padding="217px"
                   canvas
                 >
                   <Text
@@ -274,6 +275,7 @@ function App() {
                   id="bannerbox2"
                   flexDirection="column"
                   alignItems="center"
+                  margin="auto 0"
                   canvas
                 >
                   <Text
